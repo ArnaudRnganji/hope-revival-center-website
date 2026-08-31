@@ -473,27 +473,6 @@ footer.site-footer {
   gap: 12px;
 }
 
-.social-links {
-  display: flex;
-  gap: 12px;
-  margin-top: 18px;
-}
-.social-links a {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255,249,242,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-.social-links a:hover {
-  background: var(--gradient-flame);
-  transform: translateY(-2px);
-}
-.social-links svg { width: 18px; height: 18px; fill: var(--cream); }
-
 /* ---------- Utility ---------- */
 .center { text-align: center; margin-left: auto; margin-right: auto; }
 .mt-40 { margin-top: 40px; }
