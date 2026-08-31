@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Hope Revival Center</title>
+<meta name="description" content="Get in touch with Hope Revival Center — visit, call, or send a message.">
+<link rel="icon" href="assets/mark.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/mark.png" alt="Hope Revival Center mark">
+        <span>Hope Revival Center</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="ministries.html" class="">Ministries</a>
+      <a href="sermons.html" class="">Sermons</a>
+      <a href="events.html" class="">Events</a>
+      <a href="contact.html" class="current">Contact</a>
+      <a href="give.html" class="nav-give">Give</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="page-hero">
+    <img class="hero-mark" src="assets/mark.png" alt="">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h1>We'd love<br>to hear from you.</h1>
+      <p class="lede">Questions about visiting, ministries, or getting connected? Reach out — a real person will get back to you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <h3>Send a Message</h3>
+          <form class="mt-40" onsubmit="event.preventDefault(); alert('Thanks for reaching out — we will get back to you soon.'); this.reset();">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div>
+          <h3>Visit Us</h3>
+          <p class="mt-40">Edmonton</p>
+          <p class="mt-40"><a href="tel:+15551234567">(555) 123-4567</a><br><a href="mailto:hello@hoperevivalcenter.org">hello@hoperevivalcenter.org</a></p>
+          <div class="mt-40 map-frame">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-113.7139%2C53.4225%2C-113.3907%2C53.6167&amp;layer=mapnik" loading="lazy" title="Map of Edmonton, Alberta"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/mark.png" alt="Hope Revival Center mark">
+            <span>Hope Revival Center</span>
+          </div>
+          <p>A church community rooted in Christ, pursuing God, and reaching our city with revival.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li>Sunday Worship — 9:30 AM – 12 PM</li>
+            <li>Wednesday Bible Study — 7:00 PM</li>
+            <li>Friday Prayer Night — 7:30 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li>4820 Meridian Avenue<br>Edmonton, AB</li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:hello@hoperevivalcenter.org">hello@hoperevivalcenter.org</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Hope Revival Center. All rights reserved.</span>
+        <span>Made with faith, in Edmonton.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
